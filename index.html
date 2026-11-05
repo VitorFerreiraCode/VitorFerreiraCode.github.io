@@ -10,6 +10,9 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vitorferreiracode.github.io/">
   <meta name="theme-color" content="#0b1120">
+  <link rel="alternate" hreflang="pt-BR" href="https://vitorferreiracode.github.io/">
+  <link rel="alternate" hreflang="en" href="https://vitorferreiracode.github.io/en/">
+  <link rel="alternate" hreflang="fr" href="https://vitorferreiracode.github.io/fr/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,10 +35,10 @@
         <a href="#quem-sou">Quem sou eu</a>
         <a href="#faculdade">Faculdade</a>
         <a href="#projetos">Projetos</a>
-        <a href="#trabalho">Onde trabalho</a>
-        <a href="#como">Como trabalho</a>
+        <a href="#trabalho">Trabalho</a>
         <a href="#contato">Contato</a>
       </nav>
+      <div class="idioma-site" aria-label="Idioma do site"><a href="./" aria-current="page" lang="pt-BR">PT</a><a href="en/" lang="en">EN</a><a href="fr/" lang="fr">FR</a></div>
       <button class="tema" type="button" aria-label="Alternar tema claro/escuro">
         <svg class="tema__sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M1.5 12H4M20 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
         <svg class="tema__lua" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
@@ -53,7 +56,7 @@
           <p class="hero__papel">
             <span class="mono">&gt;</span> <span class="digitando" data-frases='["Desenvolvedor de software","Estudante de Sistemas de Informação na UTFPR","Fundador da TypeX Empresa Júnior","Instrutor de oficinas de segurança"]'>Desenvolvedor de software</span><span class="cursor" aria-hidden="true">_</span>
           </p>
-          <p class="hero__texto">Desenvolvedor <b>full stack</b> que leva sistemas do zero à produção: modelo o banco, desenho a arquitetura, escrevo os testes, faço o deploy e cuido do que o cliente vê. Hoje tenho sistemas com <b>pagamentos reais</b> rodando, uma <b>plataforma de ensino</b> em produção e experiência profissional com <b>Java EE</b>.</p>
+          <p class="hero__texto">Desenvolvedor <b>full stack</b> que leva sistemas do zero à produção: modelo o banco, desenho a arquitetura, escrevo os testes, faço o deploy e cuido do que o cliente vê. Hoje tenho sistemas com <b>pagamentos reais</b> rodando, uma <b>plataforma de ensino</b> em produção e experiência profissional com <b>Java</b>.</p>
           <div class="acoes">
             <a class="botao botao--forte" href="#projetos">Ver projetos</a>
             <a class="botao" href="#contato">Falar comigo</a>
@@ -72,6 +75,28 @@ Next.js · NestJS · Node · Docker
 <span class="p">$</span> cat hobbies.txt
 leitura · videogame · mods e plugins
 <span class="p">$</span> <span class="cursor">▍</span></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRÍCULO E IDIOMAS -->
+    <section class="faixa-cv" id="curriculo">
+      <div class="largura faixa-cv__grade">
+        <div class="faixa-cv__bloco">
+          <h2 class="faixa-cv__titulo">Currículo</h2>
+          <div class="faixa-cv__botoes">
+            <a class="cv" href="assets/curriculo/curriculo-vitor-ferreira-viana-pt.pdf" target="_blank" rel="noopener noreferrer"><span class="cv__sigla">PT</span><span>Português</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a>
+            <a class="cv" href="assets/curriculo/resume-vitor-ferreira-viana-en.pdf" target="_blank" rel="noopener noreferrer"><span class="cv__sigla">EN</span><span>English</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a>
+            <a class="cv" href="assets/curriculo/cv-vitor-ferreira-viana-fr.pdf" target="_blank" rel="noopener noreferrer"><span class="cv__sigla">FR</span><span>Français</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a>
+          </div>
+        </div>
+        <div class="faixa-cv__bloco">
+          <h2 class="faixa-cv__titulo">Idiomas</h2>
+          <ul class="idiomas">
+            <li><span class="idiomas__nome">Português</span><span class="nivel-barra" data-n="6" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="idiomas__nivel">Nativo</span></li>
+            <li><span class="idiomas__nome">Inglês</span><span class="nivel-barra" data-n="3" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="idiomas__nivel">B1 · intermediário</span></li>
+            <li><span class="idiomas__nome">Francês</span><span class="nivel-barra" data-n="3" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="idiomas__nivel">B1 · intermediário</span></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -97,8 +122,8 @@ leitura · videogame · mods e plugins
             <blockquote>“Meu Deus! Um minuto inteiro de felicidade! Será isso pouco, ainda que para toda a vida de um homem?”</blockquote>
             <figcaption>— Fiódor Dostoiévski, <i>Noites Brancas</i> (1848)</figcaption>
           </figure>
-          <p>Sou o Vitor, estudante de <b>Sistemas de Informação na UTFPR</b> (cursando), câmpus Francisco Beltrão, e desenvolvedor de software. Gosto do ponto em que lógica, arquitetura e experiência de uso se encontram, e de ver um sistema sair do papel e ser usado de verdade por quem precisa dele.</p>
-          <p>Minha linguagem de base é <b>Java</b>; no dia a dia também trabalho com <b>TypeScript, SQL, PHP, HTML e CSS</b>. Prefiro sistemas simples de operar, bem documentados e cobertos por testes. Também estudo <b>segurança</b> — engenharia reversa, malware, anticheats — e levo isso para oficinas, sempre pelo lado educacional e defensivo.</p>
+          <p>Sou o Vitor, de Francisco Beltrão, no Paraná. Sou uma pessoa movida por desafios e pela vontade de construir coisas que gerem <b>impacto real</b>. Acredito no poder da <b>colaboração</b>, na <b>liderança com propósito</b> e na tecnologia como meio de <b>transformação</b>.</p>
+          <p>Foi isso que me levou a fundar uma empresa júnior, a transformar aparelhos apreendidos em computadores para escolas e a dar oficinas para quem está começando. Gosto de aprender e, mais ainda, de dividir o que aprendi.</p>
           <p>Fora do código, gosto de estudar <b>matemática, história, política e filosofia</b>. Sou <b>leitor</b>, gosto de <b>jogar videogame</b> e vivo desenvolvendo <b>mods, plugins, texturas</b> e o que mais der para criar dentro dos jogos.</p>
         </div>
       </div>
@@ -144,15 +169,15 @@ leitura · videogame · mods e plugins
         <div class="cartoes cartoes--2">
           <article class="cartao">
             <div class="cartao__icone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
-            <p class="etiqueta">Fundador</p>
+            <p class="etiqueta">Fundador e presidente · jan 2025 – jul 2026</p>
             <h3>TypeX Empresa Júnior</h3>
-            <p>Fundei a empresa júnior do curso. No primeiro ano, faturamos mais de <b>R$ 10 mil</b> com projetos de software para clientes reais.</p>
+            <p>Fundei e presidi a empresa júnior do curso, liderando <b>45 membros</b> (7 diretores). No primeiro ano, faturamos mais de <b>R$ 10 mil</b>. Prêmios <b>EJ Iniciativa</b> (Vértice 2025) e <b>EJ Aspirante</b> (Vendaval 2025).</p>
           </article>
           <article class="cartao">
             <div class="cartao__icone" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><path d="M9 10l2 2 4-4"/></svg></div>
-            <p class="etiqueta">Extensão</p>
+            <p class="etiqueta">Bolsista Fundação Araucária · ago 2024 – mar 2026</p>
             <h3><a href="https://github.com/ProjetoTransformar/projeto-transformar" target="_blank" rel="noopener noreferrer">Projeto Transformar <span aria-hidden="true">↗</span></a></h3>
-            <p>TV boxes apreendidas pela Receita Federal ganhavam um novo sistema e viravam <b>minicomputadores</b>, doados a escolas. Tecnologia que seria descartada, de volta para a educação.</p>
+            <p>TV boxes (IPTV) apreendidas pela Receita Federal viravam <b>minicomputadores com Armbian</b> e laboratórios para escolas sem recursos. Também montamos clusters de IPTVs e power banks com baterias de cigarros eletrônicos e no-breaks.</p>
           </article>
           <article class="cartao">
             <div class="cartao__icone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
@@ -229,15 +254,15 @@ leitura · videogame · mods e plugins
         <div>
           <h2 class="titulo"><span class="mono">04.</span> Onde trabalho</h2>
           <article class="cartao trabalho">
-            <p class="etiqueta">Desenvolvedor · atual</p>
+            <p class="etiqueta">Desenvolvedor Júnior III · jan 2026 – atual</p>
             <h3>Axdoc</h3>
-            <p>Trabalho no desenvolvimento do sistema de gestão documental da Axdoc, em Java EE: novas funcionalidades, integrações com webservices e banco de dados. Também produzo os tutoriais em vídeo do produto, com destaque nos cliques, legendas e narração.</p>
-            <div class="chips"><span>Java EE</span><span>Maven</span><span>JSP</span><span>SQL</span></div>
+            <p>Desenvolvo, de forma presencial, um GED (gestão eletrônica de documentos) em Java com VRaptor e JSP: novas funcionalidades, integrações com webservices de parceiros e manutenção em produção. Também produzo os tutoriais em vídeo do produto.</p>
+            <div class="chips"><span>Java</span><span>VRaptor</span><span>JSP</span><span>PostgreSQL</span><span>Docker</span></div>
           </article>
           <h3 class="trabalho__anteriores">Experiências anteriores</h3>
           <ul class="trajetoria">
-            <li><b>Desenvolvedor — TriXX Software</b></li>
-            <li><b>Desenvolvedor — DNS Marketing Agência Digital</b></li>
+            <li><b>TriXX Software — Desenvolvedor Júnior I</b><span>Freelance remoto · jan 2025 – mar 2026. Projetos web com PHP, PostgreSQL, JavaScript e Docker, com foco em otimização de processos e experiência do usuário.</span></li>
+            <li><b>DNS Agência de Marketing — Desenvolvedor Júnior I</b><span>Freelance remoto · ago 2025 – jul 2026. Sites e projetos com WordPress e MySQL.</span></li>
           </ul>
         </div>
         <div>

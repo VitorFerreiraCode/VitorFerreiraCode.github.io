@@ -351,3 +351,75 @@ h1 { background: linear-gradient(180deg, var(--texto) 30%, color-mix(in srgb, va
   .logo__nome { font-size: .95rem; }
 }
 @media (prefers-reduced-motion: reduce) { .fundo-vivo i { animation: none; } }
+
+/* Ajuste de luminosidade (v2): claro menos ofuscante, escuro mais fundo */
+:root {
+  --fundo: #e4e9f0;
+  --fundo-alt: #dde3ec;
+  --vidro: rgb(255 255 255 / 38%);
+  --vidro-forte: rgb(255 255 255 / 52%);
+  --vidro-borda: rgb(255 255 255 / 55%);
+  --vidro-sombra: 0 10px 36px rgb(15 23 42 / 12%);
+  --blob1: #38bdf8; --blob2: #a78bfa; --blob3: #4ade80;
+}
+:root:not([data-tema="escuro"]) .fundo-vivo i { opacity: .28; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema="claro"]) { --fundo: #03050b; --fundo-alt: #060912; }
+  :root:not([data-tema="claro"]) .fundo-vivo i { opacity: .3; }
+}
+:root[data-tema="escuro"] { --fundo: #03050b; --fundo-alt: #060912; }
+:root[data-tema="escuro"] .fundo-vivo i { opacity: .3; }
+.trajetoria span { display: block; }
+
+/* Faixa de currículo e idiomas */
+.faixa-cv { padding: 0 0 28px; }
+.faixa-cv__grade { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 18px; }
+.faixa-cv__bloco { padding: 18px 20px; border-radius: 20px; background: var(--vidro); border: 1px solid var(--vidro-borda); box-shadow: var(--vidro-brilho), var(--vidro-sombra); -webkit-backdrop-filter: blur(20px) saturate(170%); backdrop-filter: blur(20px) saturate(170%); }
+.faixa-cv__titulo { margin: 0 0 12px; font: 600 .74rem "JetBrains Mono", monospace; text-transform: uppercase; letter-spacing: .08em; color: var(--acento); }
+.faixa-cv__botoes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.cv { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 14px; border: 1px solid var(--vidro-borda); background: var(--vidro-forte); color: var(--texto); font-weight: 600; font-size: .92rem; transition: border-color .2s, transform .2s; }
+.cv:hover { text-decoration: none; border-color: var(--acento); transform: translateY(-1px); }
+.cv__sigla { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 9px; background: var(--acento-fundo); color: var(--acento); font: 700 .72rem "JetBrains Mono", monospace; }
+.cv svg { width: 18px; height: 18px; margin-left: auto; fill: none; stroke: var(--suave); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.idiomas { margin: 0; padding: 0; list-style: none; display: grid; gap: 9px; }
+.idiomas li { display: grid; grid-template-columns: 80px minmax(0, 1fr) 128px; align-items: center; gap: 12px; font-size: .9rem; }
+.idiomas__nome { font-weight: 600; }
+.idiomas__nivel { color: var(--suave); font-size: .82rem; text-align: right; }
+.nivel-barra { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; }
+.nivel-barra i { height: 7px; border-radius: 99px; background: var(--vidro-borda); }
+.nivel-barra[data-n="6"] i, .nivel-barra[data-n="3"] i:nth-child(-n+3) { background: linear-gradient(90deg, var(--acento), color-mix(in srgb, var(--acento) 60%, #a78bfa)); }
+
+/* Seletor de idioma do site */
+.idioma-site { display: flex; gap: 2px; padding: 3px; margin-left: 8px; border-radius: 999px; border: 1px solid var(--vidro-borda); background: var(--vidro); }
+.idioma-site a { padding: 4px 9px; border-radius: 999px; font: 600 .74rem "JetBrains Mono", monospace; color: var(--suave); }
+.idioma-site a:hover { text-decoration: none; color: var(--texto); }
+.idioma-site a[aria-current="page"] { background: var(--acento); color: #fff; }
+:root[data-tema="escuro"] .idioma-site a[aria-current="page"] { color: #04121f; }
+@media (prefers-color-scheme: dark) { :root:not([data-tema="claro"]) .idioma-site a[aria-current="page"] { color: #04121f; } }
+.idioma-site + .tema { margin-left: 8px; }
+@media (max-width: 900px) {
+  .faixa-cv__grade { grid-template-columns: minmax(0, 1fr); }
+  .idioma-site { margin-left: auto; }
+  .idioma-site + .tema { margin-left: 8px; }
+}
+@media (max-width: 600px) {
+  .faixa-cv__botoes { grid-template-columns: minmax(0, 1fr); }
+  .idiomas li { grid-template-columns: 70px minmax(0, 1fr); }
+  .idiomas__nivel { grid-column: 2; text-align: left; margin-top: -4px; }
+  .logo__nome { display: none; }
+}
+.menu a { white-space: nowrap; }
+@media (max-width: 600px) {
+  .logo__nome { display: inline; font-size: .86rem; }
+  .logo { gap: 7px; }
+  .logo__marca { width: 28px; height: 28px; }
+  .idioma-site a { padding: 4px 7px; }
+}
+@media (max-width: 370px) { .logo__nome { display: none; } }
+
+/* Quem sou eu centralizado */
+#quem-sou .sobre { grid-template-columns: minmax(0, 1fr); max-width: 780px; gap: 0; text-align: center; }
+#quem-sou .titulo { margin-bottom: 24px; }
+#quem-sou .sobre__texto p { margin-inline: auto; }
+#quem-sou .citacao { border: 1px solid var(--vidro-borda); border-radius: 20px; padding: 26px 32px; margin-bottom: 30px; }
+#quem-sou .citacao blockquote { font-size: 1.28rem; }
