@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vitor Ferreira Viana — Software Developer</title>
-  <meta name="description" content="Software developer and Information Systems student at UTFPR (Brazil). Founder of TypeX Junior Enterprise, creator of sabermais and PGRS+, security workshop instructor.">
+  <meta name="description" content="Software developer and Information Systems student at UTFPR (Brazil). Founder of TypeX Junior Enterprise, TechWeek 2025 coordinator, creator of sabermais and PGRS+, security workshop instructor.">
   <meta property="og:title" content="Vitor Ferreira Viana — Software Developer">
   <meta property="og:description" content="Systems that solve real problems: a learning platform, environmental automation, AI and payment bots, online stores.">
   <meta property="og:type" content="website">
@@ -32,9 +32,10 @@
         <span class="logo__marca">VF</span><span class="logo__nome">VitorFerreira<span>Code</span></span>
       </a>
       <nav class="menu" aria-label="Sections">
+        <a href="#projetos">Projects</a>
+        <a href="#lideranca">Leadership</a>
         <a href="#quem-sou">About</a>
         <a href="#faculdade">University</a>
-        <a href="#projetos">Projects</a>
         <a href="#trabalho">Work</a>
         <a href="#contato">Contact</a>
       </nav>
@@ -54,7 +55,7 @@
           <p class="sobretitulo"><span class="ponto"></span> Always open to opportunities</p>
           <h1>Vitor Ferreira Viana</h1>
           <p class="hero__papel">
-            <span class="mono">&gt;</span> <span class="digitando" data-frases='["Software developer","Information Systems student at UTFPR","Founder of TypeX Junior Enterprise","Security workshop instructor"]'>Software developer</span><span class="cursor" aria-hidden="true">_</span>
+            <span class="mono">&gt;</span> <span class="digitando" data-frases='["Software developer","Information Systems student at UTFPR","Founder of TypeX Junior Enterprise","TechWeek 2025 coordinator","Security workshop instructor"]'>Software developer</span><span class="cursor" aria-hidden="true">_</span>
           </p>
           <p class="hero__texto"><b>Full stack</b> developer who takes systems from zero to production: I model the database, design the architecture, write the tests, deploy, and take care of what the customer sees. Today I run systems with <b>real payments</b>, a <b>learning platform</b> in production, and have professional experience with <b>Java</b>.</p>
           <div class="acoes">
@@ -107,100 +108,16 @@ reading · video games · mods and plugins
         <ul class="conquistas">
           <li><span class="conquistas__icone" aria-hidden="true">◆</span><div><b>From zero to production, on my own</b><span>Built a multi-tenant learning platform with database-level data isolation, AI, CI/CD and 340+ automated tests.</span></div></li>
           <li><span class="conquistas__icone" aria-hidden="true">◆</span><div><b>Software that makes money</b><span>Systems with Pix and Mercado Pago payments used by clients: a sales bot for coaches and the f1sul.com.br store.</span></div></li>
-          <li><span class="conquistas__icone" aria-hidden="true">◆</span><div><b>Leadership and entrepreneurship</b><span>Founded TypeX Junior Enterprise, which made over BRL 10,000 in its first year.</span></div></li>
-          <li><span class="conquistas__icone" aria-hidden="true">◆</span><div><b>Technical communication</b><span>Taught two security workshops at TechWeek 2026 and produce video tutorials for software.</span></div></li>
+          <li><span class="conquistas__icone" aria-hidden="true">◆</span><div><b>Leadership and entrepreneurship</b><span>Coordinated TechWeek 2025 (200+ students), organized TechWeek 2026 (150+) and founded TypeX Junior Enterprise, with 45 members and over BRL 10,000 in its first year.</span></div></li>
+          <li><span class="conquistas__icone" aria-hidden="true">◆</span><div><b>Communication</b><span>Moderated the talk by Julien Decultot, CFO of LVMH, taught two security workshops at TechWeek 2026 and produce software video tutorials.</span></div></li>
         </ul>
-      </div>
-    </section>
-
-    <!-- QUEM SOU EU -->
-    <section class="secao" id="quem-sou">
-      <div class="largura sobre">
-        <h2 class="titulo"><span class="mono">01.</span> About me</h2>
-        <div class="sobre__texto">
-          <figure class="citacao citacao--abertura">
-            <blockquote>“My God, a moment of bliss! Why, isn’t that enough for the whole of a man’s life?”</blockquote>
-            <figcaption>— Fyodor Dostoevsky, <i>White Nights</i> (1848)</figcaption>
-          </figure>
-          <p>I’m Vitor, from Francisco Beltrão, in southern Brazil. I’m driven by challenges and by the will to build things with <b>real impact</b>. I believe in the power of <b>collaboration</b>, in <b>purpose-driven leadership</b> and in technology as a means of <b>transformation</b>.</p>
-          <p>That’s what led me to found a junior enterprise, to turn seized devices into computers for schools and to teach workshops for people just starting out. I love learning, and even more, sharing what I’ve learned.</p>
-          <p>Outside of code, I like studying <b>mathematics, history, politics and philosophy</b>. I’m a <b>reader</b>, I enjoy <b>video games</b>, and I’m always building <b>mods, plugins, textures</b> and whatever else can be created inside games.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FACULDADE -->
-    <section class="secao secao--alt" id="faculdade">
-      <div class="largura">
-        <h2 class="titulo"><span class="mono">02.</span> University</h2>
-        <p class="intro">B.Sc. in Information Systems at UTFPR, Francisco Beltrão campus — <b>in progress</b>. Outside the classroom, this is where I learned to lead, teach and bring technology to people who need it.</p>
-
-        <article class="destaque">
-          <div class="destaque__texto">
-            <p class="etiqueta">Undergraduate thesis · in production</p>
-            <h3>sabermais — Learning Management System</h3>
-            <p>A learning platform built for equity: it adapts to each student and shows the teacher <b>how the class studies</b>, so the teacher can adapt too. The study profile comes from LASSI, a study-strategies inventory validated in Brazil.</p>
-            <ul class="lista-check">
-              <li>Classes, content, assignments, quizzes, forum, grades, attendance and gamification</li>
-              <li>Study plan and study cycle for students; class profile and teaching suggestions for teachers</li>
-            </ul>
-            <p class="decisoes__titulo">Technical decisions</p>
-            <ul class="decisoes">
-              <li><b>Secure multi-tenancy:</b> each institution isolated with PostgreSQL Row-Level Security, not only by application filters.</li>
-              <li><b>Quality:</b> 340+ end-to-end tests against a real database in CI; deploys only on a green pipeline.</li>
-              <li><b>Responsible AI:</b> data anonymized before reaching the model; the AI explains, but never solves the student’s assignment.</li>
-              <li><b>Documented architecture:</b> 20+ decisions recorded as ADRs, with alternatives and consequences.</li>
-            </ul>
-            <div class="chips"><span>Next.js</span><span>NestJS</span><span>Prisma</span><span>PostgreSQL</span><span>AI</span></div>
-            <p class="privado">Research with real classes planned for 2027. Private repository — demo on request.</p>
-          </div>
-          <div class="destaque__arte" aria-hidden="true">
-            <div class="mini-ui">
-              <div class="mini-ui__barra"><span class="sm">+</span> saber<b>mais</b></div>
-              <div class="mini-ui__linha"><span>Time management</span><i style="--v:42%"></i></div>
-              <div class="mini-ui__linha"><span>Motivation</span><i style="--v:78%"></i></div>
-              <div class="mini-ui__linha"><span>Concentration</span><i style="--v:55%"></i></div>
-              <div class="mini-ui__linha"><span>Self-testing</span><i style="--v:64%"></i></div>
-              <div class="mini-ui__dica">Tip: split your week into 25-min blocks (pomodoro) for the hardest subjects.</div>
-            </div>
-          </div>
-        </article>
-
-        <div class="cartoes cartoes--2">
-          <article class="cartao">
-            <div class="cartao__icone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
-            <p class="etiqueta">Founder and president · Jan 2025 – Jul 2026</p>
-            <h3>TypeX Junior Enterprise</h3>
-            <p>I founded and led my program’s junior enterprise (a student-run consulting company), with <b>45 members</b> (7 directors). In the first year we made over <b>BRL 10,000</b>. Awards: <b>EJ Iniciativa</b> (Vértice 2025) and <b>EJ Aspirante</b> (Vendaval 2025).</p>
-          </article>
-          <article class="cartao">
-            <div class="cartao__icone" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><path d="M9 10l2 2 4-4"/></svg></div>
-            <p class="etiqueta">Fundação Araucária scholarship · Aug 2024 – Mar 2026</p>
-            <h3><a href="https://github.com/ProjetoTransformar/projeto-transformar" target="_blank" rel="noopener noreferrer">Projeto Transformar <span aria-hidden="true">↗</span></a></h3>
-            <p>IPTV boxes seized by Brazil’s Federal Revenue Service became <b>Armbian mini-computers</b> and computer labs for under-resourced schools. We also built IPTV clusters, power banks from e-cigarette batteries, and UPS units.</p>
-          </article>
-          <article class="cartao">
-            <div class="cartao__icone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
-            <p class="etiqueta etiqueta--alerta">Workshop · TechWeek 2026</p>
-            <h3>The Invisible War: Cheats vs Anti-cheats</h3>
-            <p>How internal, external, kernel and DMA cheats work, and how anti-cheats such as Vanguard, EAC, BattlEye and VAC detect them.</p>
-            <a class="link" href="https://github.com/VitorFerreiraCode/oficina-cheat-e-anticheat" target="_blank" rel="noopener noreferrer">Slides and materials <span aria-hidden="true">→</span></a>
-          </article>
-          <article class="cartao">
-            <div class="cartao__icone" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.8 2.8M16.2 16.2 19 19M5 19l2.8-2.8M16.2 7.8 19 5"/></svg></div>
-            <p class="etiqueta etiqueta--alerta">Workshop · TechWeek 2026</p>
-            <h3>Malware: infection, persistence and data theft</h3>
-            <p>How threats act on Windows and how they are detected and stopped, with a harmless infostealer simulator. Educational and defensive.</p>
-            <a class="link" href="https://github.com/VitorFerreiraCode/oficina-malwares" target="_blank" rel="noopener noreferrer">Slides and materials <span aria-hidden="true">→</span></a>
-          </article>
-        </div>
       </div>
     </section>
 
     <!-- PROJETOS -->
     <section class="secao" id="projetos">
       <div class="largura">
-        <h2 class="titulo"><span class="mono">03.</span> Projects</h2>
+        <h2 class="titulo"><span class="mono">01.</span> Projects</h2>
         <p class="intro">Systems I build on my own, used by clients or on their way there.</p>
 
         <article class="caso">
@@ -249,11 +166,150 @@ reading · video games · mods and plugins
       </div>
     </section>
 
+    <!-- LIDERANÇA -->
+    <section class="secao secao--alt" id="lideranca">
+      <div class="largura">
+        <h2 class="titulo"><span class="mono">02.</span> Leadership & events</h2>
+        <p class="intro">Leading people, organizing events and speaking in public are as much a part of my work as code.</p>
+        <div class="cartoes cartoes--2">
+          <article class="cartao">
+            <div class="cartao__icone" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.4"/><path d="M15.5 14.3c2.8.3 5 2.6 5 5.7"/></svg></div>
+            <p class="etiqueta">Coordinator · TechWeek 2025</p>
+            <h3>TechWeek 2025</h3>
+            <p>I coordinated the 2025 edition of the event, which brought together <b>over 200 students</b>.</p>
+            <div class="chips"><span>Leadership</span><span>Team coordination</span><span>Event organization</span></div>
+          </article>
+          <article class="cartao">
+            <div class="cartao__icone" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8"/></svg></div>
+            <p class="etiqueta">Talk moderator</p>
+            <h3>Julien Decultot, CFO of LVMH</h3>
+            <p>I moderated the talk by <b>Julien Decultot</b>, CFO of <b>LVMH</b> (Louis Vuitton Moët Hennessy), guiding the conversation between the executive and the audience.</p>
+            <div class="chips"><span>Communication</span><span>Moderation</span><span>Public speaking</span></div>
+          </article>
+          <article class="cartao">
+            <div class="cartao__icone" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M9 15l2 2 4-4"/></svg></div>
+            <p class="etiqueta">Organizer · TechWeek 2026</p>
+            <h3>TechWeek 2026</h3>
+            <p>I organized the 2026 edition, with <b>over 150 students</b>, where I also taught two security workshops.</p>
+            <div class="chips"><span>Organization</span><span>Planning</span><span>Communication</span></div>
+          </article>
+          <article class="cartao">
+            <div class="cartao__icone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
+            <p class="etiqueta">Founder and president · Jan 2025 – Jul 2026</p>
+            <h3>TypeX Junior Enterprise</h3>
+            <p>I founded and led my program’s junior enterprise (a student-run consulting company), with <b>45 members</b> (7 directors). In the first year we made over <b>BRL 10,000</b>. Awards: <b>EJ Iniciativa</b> (Vértice 2025) and <b>EJ Aspirante</b> (Vendaval 2025).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUEM SOU EU -->
+    <section class="secao" id="quem-sou">
+      <div class="largura sobre">
+        <h2 class="titulo"><span class="mono">03.</span> About me</h2>
+        <div class="sobre__texto">
+          <figure class="citacao citacao--abertura">
+            <blockquote>“My God, a moment of bliss! Why, isn’t that enough for the whole of a man’s life?”</blockquote>
+            <figcaption>— Fyodor Dostoevsky, <i>White Nights</i> (1848)</figcaption>
+          </figure>
+          <p>I’m Vitor, from Francisco Beltrão, in southern Brazil. I’m driven by challenges and by the will to build things with <b>real impact</b>. I believe in the power of <b>collaboration</b>, in <b>purpose-driven leadership</b> and in technology as a means of <b>transformation</b>.</p>
+          <p>That’s what led me to found a junior enterprise, to turn seized devices into computers for schools and to teach workshops for people just starting out. I love learning, and even more, sharing what I’ve learned.</p>
+          <p>Outside of code, I like studying <b>mathematics, history, politics and philosophy</b>. I’m a <b>reader</b>, I enjoy <b>video games</b>, and I’m always building <b>mods, plugins, textures</b> and whatever else can be created inside games.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACULDADE -->
+    <section class="secao secao--alt" id="faculdade">
+      <div class="largura">
+        <h2 class="titulo"><span class="mono">04.</span> University</h2>
+        <p class="intro">B.Sc. in Information Systems at UTFPR, Francisco Beltrão campus — <b>in progress</b>. Outside the classroom, this is where I learned to lead, teach and bring technology to people who need it.</p>
+
+        <article class="destaque">
+          <div class="destaque__texto">
+            <p class="etiqueta">Undergraduate thesis · in production</p>
+            <h3>sabermais — Learning Management System</h3>
+            <p>A learning platform built for equity: it adapts to each student and shows the teacher <b>how the class studies</b>, so the teacher can adapt too. The study profile comes from LASSI, a study-strategies inventory validated in Brazil.</p>
+            <ul class="lista-check">
+              <li>Classes, content, assignments, quizzes, forum, grades, attendance and gamification</li>
+              <li>Study plan and study cycle for students; class profile and teaching suggestions for teachers</li>
+            </ul>
+            <p class="decisoes__titulo">Technical decisions</p>
+            <ul class="decisoes">
+              <li><b>Secure multi-tenancy:</b> each institution isolated with PostgreSQL Row-Level Security, not only by application filters.</li>
+              <li><b>Quality:</b> 340+ end-to-end tests against a real database in CI; deploys only on a green pipeline.</li>
+              <li><b>Responsible AI:</b> data anonymized before reaching the model; the AI explains, but never solves the student’s assignment.</li>
+              <li><b>Documented architecture:</b> 20+ decisions recorded as ADRs, with alternatives and consequences.</li>
+            </ul>
+            <div class="chips"><span>Next.js</span><span>NestJS</span><span>Prisma</span><span>PostgreSQL</span><span>AI</span></div>
+            <p class="privado">Research with real classes planned for 2027. Private repository — demo on request.</p>
+          </div>
+          <div class="destaque__arte" aria-hidden="true">
+            <div class="mini-ui">
+              <div class="mini-ui__barra"><span class="sm">+</span> saber<b>mais</b></div>
+              <div class="mini-ui__linha"><span>Time management</span><i style="--v:42%"></i></div>
+              <div class="mini-ui__linha"><span>Motivation</span><i style="--v:78%"></i></div>
+              <div class="mini-ui__linha"><span>Concentration</span><i style="--v:55%"></i></div>
+              <div class="mini-ui__linha"><span>Self-testing</span><i style="--v:64%"></i></div>
+              <div class="mini-ui__dica">Tip: split your week into 25-min blocks (pomodoro) for the hardest subjects.</div>
+            </div>
+          </div>
+        </article>
+
+        <div class="cartoes cartoes--3">
+          <article class="cartao">
+            <div class="cartao__icone" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><path d="M9 10l2 2 4-4"/></svg></div>
+            <p class="etiqueta">Fundação Araucária scholarship · Aug 2024 – Mar 2026</p>
+            <h3><a href="https://github.com/ProjetoTransformar/projeto-transformar" target="_blank" rel="noopener noreferrer">Projeto Transformar <span aria-hidden="true">↗</span></a></h3>
+            <p>IPTV boxes seized by Brazil’s Federal Revenue Service became <b>Armbian mini-computers</b> and computer labs for under-resourced schools. We also built IPTV clusters, power banks from e-cigarette batteries, and UPS units.</p>
+          </article>
+          <article class="cartao">
+            <div class="cartao__icone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <p class="etiqueta etiqueta--alerta">Workshop · TechWeek 2026</p>
+            <h3>The Invisible War: Cheats vs Anti-cheats</h3>
+            <p>How internal, external, kernel and DMA cheats work, and how anti-cheats such as Vanguard, EAC, BattlEye and VAC detect them.</p>
+            <a class="link" href="https://github.com/VitorFerreiraCode/oficina-cheat-e-anticheat" target="_blank" rel="noopener noreferrer">Slides and materials <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="cartao">
+            <div class="cartao__icone" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.8 2.8M16.2 16.2 19 19M5 19l2.8-2.8M16.2 7.8 19 5"/></svg></div>
+            <p class="etiqueta etiqueta--alerta">Workshop · TechWeek 2026</p>
+            <h3>Malware: infection, persistence and data theft</h3>
+            <p>How threats act on Windows and how they are detected and stopped, with a harmless infostealer simulator. Educational and defensive.</p>
+            <a class="link" href="https://github.com/VitorFerreiraCode/oficina-malwares" target="_blank" rel="noopener noreferrer">Slides and materials <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURSOS -->
+    <section class="secao" id="cursos">
+      <div class="largura">
+        <h2 class="titulo"><span class="mono">05.</span> Courses</h2>
+        <p class="intro">Learning beyond the university curriculum.</p>
+        <div class="cartoes cartoes--2">
+          <article class="cartao">
+            <div class="cartao__icone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg></div>
+            <p class="etiqueta">Workshop</p>
+            <h3>Agile Methodologies</h3>
+            <p>I took part in the agile methodologies workshop with <b>Adenilson</b>, coordinator at <b>Cresol</b>.</p>
+            <div class="chips"><span>Agile methodologies</span><span>Teamwork</span></div>
+          </article>
+          <article class="cartao">
+            <div class="cartao__icone" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="7" width="14" height="12" rx="3"/><path d="M12 3v4M9 12h.01M15 12h.01M9.5 16h5"/><path d="M2 12h3M19 12h3"/></svg></div>
+            <p class="etiqueta">AI course</p>
+            <h3>ExponencIA</h3>
+            <p>Artificial intelligence course by <b>Tulio Bittencourt</b>, where I learned about <b>harnesses</b>, <b>agents</b> and <b>skills</b>.</p>
+            <div class="chips"><span>Harness</span><span>Agents</span><span>Skills</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ONDE TRABALHO -->
     <section class="secao secao--alt" id="trabalho">
       <div class="largura duas">
         <div>
-          <h2 class="titulo"><span class="mono">04.</span> Where I work</h2>
+          <h2 class="titulo"><span class="mono">06.</span> Where I work</h2>
           <article class="cartao trabalho">
             <p class="etiqueta">Junior Developer III · Jan 2026 – present</p>
             <h3>Axdoc</h3>
@@ -267,7 +323,7 @@ reading · video games · mods and plugins
           </ul>
         </div>
         <div>
-          <h2 class="titulo"><span class="mono">05.</span> Stack</h2>
+          <h2 class="titulo"><span class="mono">07.</span> Stack</h2>
           <div class="stack">
             <div><h4>Languages</h4><div class="chips"><span>Java</span><span>TypeScript</span><span>JavaScript</span><span>SQL</span><span>PHP</span><span>HTML/CSS</span></div></div>
             <div><h4>Web</h4><div class="chips"><span>Next.js</span><span>React</span><span>NestJS</span><span>Node.js</span><span>Express</span><span>Laravel</span><span>Tailwind</span></div></div>
@@ -282,7 +338,7 @@ reading · video games · mods and plugins
     <!-- COMO EU TRABALHO -->
     <section class="secao" id="como">
       <div class="largura">
-        <h2 class="titulo"><span class="mono">06.</span> How I work</h2>
+        <h2 class="titulo"><span class="mono">08.</span> How I work</h2>
         <div class="cartoes cartoes--2 principios">
           <article class="cartao"><h3>Understand the problem before the code</h3><p>I gather the rules with the people who will use the system, through objective questions, and record every decision so no one has to re-argue it later.</p></article>
           <article class="cartao"><h3>Tests and CI as a safety net</h3><p>Every fixed bug becomes a test. Deploys only go out on a green pipeline: types, integration tests and build.</p></article>
@@ -295,7 +351,7 @@ reading · video games · mods and plugins
     <!-- CONTATO -->
     <section class="secao contato" id="contato">
       <div class="largura">
-        <h2 class="titulo"><span class="mono">07.</span> Contact</h2>
+        <h2 class="titulo"><span class="mono">09.</span> Contact</h2>
         <p class="intro">Looking for a developer for your team, a system for your business or a workshop for your event? Let’s talk.</p>
         <div class="acoes">
           <a class="botao botao--forte" href="mailto:vitorferreiraviana@alunos.utfpr.edu.br">E-mail</a>
