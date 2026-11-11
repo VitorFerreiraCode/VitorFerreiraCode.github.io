@@ -241,6 +241,9 @@ h1 { margin: 0; font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.08; letter
 .caso { margin-bottom: 18px; padding: 28px; border: 1px solid var(--linha); border-radius: 16px; background: var(--superficie); }
 .caso__cabeca h3 { margin: 0; font-size: 1.3rem; }
 .caso__cabeca h3 a { color: var(--texto); }
+.caso__marca { display: flex; align-items: center; gap: 12px; }
+.caso__marca img { flex: none; width: 40px; height: 40px; border-radius: 50%; box-shadow: 0 0 0 1px var(--linha); }
+.caso__sub { margin: 6px 0 0; color: var(--suave); font-size: .95rem; }
 .caso__cabeca .chips { margin-top: 10px; }
 .caso__corpo { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--linha); }
 .caso__corpo h4 { margin: 0 0 6px; font: 600 .74rem "JetBrains Mono", monospace; text-transform: uppercase; letter-spacing: .06em; color: var(--acento); }
