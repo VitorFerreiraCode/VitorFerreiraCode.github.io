@@ -30,3 +30,16 @@
   }
   setTimeout(passo, 2400);
 })();
+
+// Botões que copiam um texto (ex.: usuário do Discord) e confirmam na própria etiqueta.
+document.querySelectorAll('[data-copiar]').forEach((botao) => {
+  botao.addEventListener('click', () => {
+    const alvo = botao.querySelector('span');
+    const original = alvo ? alvo.textContent : '';
+    navigator.clipboard?.writeText(botao.dataset.copiar).then(() => {
+      if (!alvo) return;
+      alvo.textContent = botao.dataset.copiado || 'copiado!';
+      setTimeout(() => { alvo.textContent = original; }, 1500);
+    }).catch(() => {});
+  });
+});
