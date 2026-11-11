@@ -1,0 +1,25 @@
+@page { size: A4; margin: 13mm 14mm; }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 9.2pt; line-height: 1.42; color: #172033; }
+a { color: inherit; text-decoration: none; }
+header { padding-bottom: 9px; border-bottom: 2px solid #0369a1; }
+h1 { margin: 0; font-size: 21pt; letter-spacing: -0.02em; line-height: 1.1; }
+.cargo { margin: 3px 0 0; font-size: 11pt; font-weight: 600; color: #0369a1; }
+.local { margin: 3px 0 0; color: #475569; }
+.contatos { margin: 5px 0 0; display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 8.6pt; color: #334155; }
+.contatos b { color: #0369a1; font-weight: 600; margin-right: 3px; }
+h2 { margin: 11px 0 5px; font-size: 8.6pt; letter-spacing: .1em; text-transform: uppercase; color: #0369a1; border-bottom: 1px solid #dbe3ee; padding-bottom: 2px; }
+p { margin: 0; text-align: justify; }
+.item { margin-bottom: 6px; break-inside: avoid; }
+.item__topo { display: flex; justify-content: space-between; gap: 10px; }
+.item__topo b { font-weight: 700; }
+.item__topo span { color: #475569; white-space: nowrap; font-size: 8.6pt; }
+.item p, .item ul { color: #334155; }
+ul { margin: 2px 0 0; padding-left: 15px; }
+li { margin-bottom: 1px; text-align: justify; }
+.duas { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; }
+.lista { margin: 0; padding: 0; list-style: none; }
+.lista li { margin-bottom: 3px; text-align: left; }
+.lista b { font-weight: 600; }
+.hab b { color: #0369a1; font-weight: 600; }
